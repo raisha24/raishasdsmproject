@@ -1,4 +1,5 @@
 EXPLANATORY PIECE
+
 CinemaBot was built to be an interactive online bot constructed to help a film festival’s employees discover various entertainments while doing their jobs. This bot is a Slack Bot made with Phyton. The tools that I’ve used throughout creating this project are Sublime Text 3.1.1 and Terminal. The ZIP that I have emailed, cinemabot, contains the source code, the navigating files with mvenv and stackclient installed, as well as process evidence in the form of text. 
 
 As for the current state, this completed code work appears not to be working at the end. My final step was running my bot code, cinemabot.py, through Terminal. However, after numerous tries and fixes, it appears that my code failed to run.
