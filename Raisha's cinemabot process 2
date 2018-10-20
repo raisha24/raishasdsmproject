@@ -1,0 +1,107 @@
+Last login: Fri Oct 12 14:18:30 on ttys001
+Raishas-MacBook-Pro:~ raisha$ cd desktop
+Raishas-MacBook-Pro:desktop raisha$ cd cinemabot
+Raishas-MacBook-Pro:cinemabot raisha$ source myvenv/bin/activate
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ python cinemabot.py
+/Library/Frameworks/Python.framework/Versions/3.5/Resources/Python.app/Contents/MacOS/Python: can't open file 'cinemabot.py': [Errno 2] No such file or directory
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ cd myvenv
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+  File "cinemabot.py", line 16
+    if type and type == 'message' and not(event.get('user')==CINEMABOT_SLACK_ID):
+                                                                                ^
+IndentationError: unindent does not match any outer indentation level
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+  File "cinemabot.py", line 27
+    if type and type == 'message' and not(event.get('user')==CINEMABOT_SLACK_ID):
+                                                                                ^
+IndentationError: unindent does not match any outer indentation level
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+[!] Connection to Slack failed.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+[!] Connection to Slack failed.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$  python cinemabot.py
+Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+[!] Connection to Slack failed.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export CINEMABOT_SLACK_TOKEN='xoxb-453792396083-455441528115-rmzzaRaYx749XTpCw12QKe3a'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export CINEMABOT_SLACK_NAME='cinemabot'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ SH SOURCE.SH
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 376, in wrap_socket
+    _context=self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 747, in __init__
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 983, in do_handshake
+    self._sslobj.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 628, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)
+[!] Connection to Slack failed.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python -u
+Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 10:54:46) 
+[GCC 4.2.1 (Apple Inc. build 5577)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 
+>>> 
+>>> back
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'back' is not defined
+>>> python discover.py
+  File "<stdin>", line 1
+    python discover.py
+                  ^
+SyntaxError: invalid syntax
+>>> python3 discover.py
+  File "<stdin>", line 1
+    python3 discover.py
+                   ^
+SyntaxError: invalid syntax
+>>> 

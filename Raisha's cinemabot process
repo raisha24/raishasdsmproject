@@ -1,0 +1,517 @@
+Last login: Thu Oct  4 16:55:12 on ttys002
+Raishas-MacBook-Pro:~ raisha$ pip install chatterbot
+Collecting chatterbot
+  Downloading https://files.pythonhosted.org/packages/60/8e/cdcc5c8c97dc4d591dc96b6f452f31393fc1393bd1f37d2819bcce9d0d57/ChatterBot-0.8.7-py2.py3-none-any.whl (74kB)
+    100% |████████████████████████████████| 81kB 4.0MB/s 
+Collecting mathparse<0.2,>=0.1 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/c3/e5/4910fb85950cb960fcf3f5aabe1c8e55f5c9201788a1c1302b570a7e1f84/mathparse-0.1.2-py3-none-any.whl
+Collecting python-twitter<4.0,>=3.0 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/e6/2c/9fc6565b57ce6f3cc8e20b6c4bde8960dd0857629d41654bce46a6dd0bf9/python_twitter-3.4.2-py2.py3-none-any.whl (61kB)
+    100% |████████████████████████████████| 71kB 5.3MB/s 
+Collecting python-dateutil<2.7,>=2.6 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/4b/0d/7ed381ab4fe80b8ebf34411d14f253e1cf3e56e2820ffa1d8844b23859a2/python_dateutil-2.6.1-py2.py3-none-any.whl (194kB)
+    100% |████████████████████████████████| 194kB 5.6MB/s 
+Collecting pymongo<4.0,>=3.3 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/9a/33/6bea7a41bbb21d37568078da5589492549f7220bf0f3d9ec1005f2893832/pymongo-3.7.2-cp35-cp35m-macosx_10_6_intel.whl (345kB)
+    100% |████████████████████████████████| 348kB 4.9MB/s 
+Collecting sqlalchemy<1.3,>=1.2 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/25/c9/b0552098cee325425a61efdf380c51b5c721e459081c85bbb860f501c091/SQLAlchemy-1.2.12.tar.gz (5.6MB)
+    100% |████████████████████████████████| 5.6MB 2.5MB/s 
+Collecting chatterbot-corpus<1.2,>=1.1 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/75/76/98639175fe64eaa3cb6903004d737a62cb6eab1f3f34020ca11fb3250214/chatterbot_corpus-1.1.4-py2.py3-none-any.whl (117kB)
+    100% |████████████████████████████████| 122kB 9.7MB/s 
+Collecting nltk<4.0,>=3.2 (from chatterbot)
+  Downloading https://files.pythonhosted.org/packages/50/09/3b1755d528ad9156ee7243d52aa5cd2b809ef053a0f31b53d92853dd653a/nltk-3.3.0.zip (1.4MB)
+    100% |████████████████████████████████| 1.4MB 8.2MB/s 
+Collecting requests-oauthlib (from python-twitter<4.0,>=3.0->chatterbot)
+  Downloading https://files.pythonhosted.org/packages/94/e7/c250d122992e1561690d9c0f7856dadb79d61fd4bdd0e598087dce607f6c/requests_oauthlib-1.0.0-py2.py3-none-any.whl
+Collecting future (from python-twitter<4.0,>=3.0->chatterbot)
+  Downloading https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz (824kB)
+    100% |████████████████████████████████| 829kB 11.4MB/s 
+Collecting requests (from python-twitter<4.0,>=3.0->chatterbot)
+  Using cached https://files.pythonhosted.org/packages/65/47/7e02164a2a3db50ed6d8a6ab1d6d60b69c4c3fdf57a284257925dfc12bda/requests-2.19.1-py2.py3-none-any.whl
+Collecting six>=1.5 (from python-dateutil<2.7,>=2.6->chatterbot)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting PyYAML<4.0,>=3.12 (from chatterbot-corpus<1.2,>=1.1->chatterbot)
+  Downloading https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz (270kB)
+    100% |████████████████████████████████| 276kB 7.7MB/s 
+Collecting oauthlib>=0.6.2 (from requests-oauthlib->python-twitter<4.0,>=3.0->chatterbot)
+  Downloading https://files.pythonhosted.org/packages/e6/d1/ddd9cfea3e736399b97ded5c2dd62d1322adef4a72d816f1ed1049d6a179/oauthlib-2.1.0-py2.py3-none-any.whl (121kB)
+    100% |████████████████████████████████| 122kB 81kB/s 
+Collecting certifi>=2017.4.17 (from requests->python-twitter<4.0,>=3.0->chatterbot)
+  Using cached https://files.pythonhosted.org/packages/df/f7/04fee6ac349e915b82171f8e23cee63644d83663b34c539f7a09aed18f9e/certifi-2018.8.24-py2.py3-none-any.whl
+Collecting chardet<3.1.0,>=3.0.2 (from requests->python-twitter<4.0,>=3.0->chatterbot)
+  Using cached https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl
+Collecting urllib3<1.24,>=1.21.1 (from requests->python-twitter<4.0,>=3.0->chatterbot)
+  Using cached https://files.pythonhosted.org/packages/bd/c9/6fdd990019071a4a32a5e7cb78a1d92c53851ef4f56f62a3486e6a7d8ffb/urllib3-1.23-py2.py3-none-any.whl
+Collecting idna<2.8,>=2.5 (from requests->python-twitter<4.0,>=3.0->chatterbot)
+  Using cached https://files.pythonhosted.org/packages/4b/2a/0276479a4b3caeb8a8c1af2f8e4355746a97fab05a372e4a2c6a6b876165/idna-2.7-py2.py3-none-any.whl
+Installing collected packages: mathparse, oauthlib, certifi, chardet, urllib3, idna, requests, requests-oauthlib, future, python-twitter, six, python-dateutil, pymongo, sqlalchemy, PyYAML, chatterbot-corpus, nltk, chatterbot
+  Running setup.py install for future ... done
+  Running setup.py install for sqlalchemy ... done
+  Running setup.py install for PyYAML ... done
+  Running setup.py install for nltk ... done
+Successfully installed PyYAML-3.13 certifi-2018.8.24 chardet-3.0.4 chatterbot-0.8.7 chatterbot-corpus-1.1.4 future-0.16.0 idna-2.7 mathparse-0.1.2 nltk-3.3 oauthlib-2.1.0 pymongo-3.7.2 python-dateutil-2.6.1 python-twitter-3.4.2 requests-2.19.1 requests-oauthlib-1.0.0 six-1.11.0 sqlalchemy-1.2.12 urllib3-1.23
+Raishas-MacBook-Pro:~ raisha$ from chatterbot import chatbot
+from: can't read /var/mail/chatterbot
+Raishas-MacBook-Pro:~ raisha$ 
+Display all 1484 possibilities? (y or n)
+Raishas-MacBook-Pro:~ raisha$ from chatterbot import chatbot
+from: can't read /var/mail/chatterbot
+Raishas-MacBook-Pro:~ raisha$ pip install slackclient
+Collecting slackclient
+  Downloading https://files.pythonhosted.org/packages/0d/2f/1378e64a843a5a8a83d73caa59ac88c36c67e2b41ac0fab3422080ff13bd/slackclient-1.3.0-py2.py3-none-any.whl
+Collecting websocket-client<1.0a0,>=0.35 (from slackclient)
+  Downloading https://files.pythonhosted.org/packages/14/d4/6a8cd4e7f67da465108c7cc0a307a1c5da7e2cdf497330b682069b1d4758/websocket_client-0.53.0-py2.py3-none-any.whl (198kB)
+    100% |████████████████████████████████| 204kB 9.1MB/s 
+Requirement already satisfied: requests<3.0a0,>=2.11 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: six<2.0a0,>=1.10 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: idna<2.8,>=2.5 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: certifi>=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Installing collected packages: websocket-client, slackclient
+Successfully installed slackclient-1.3.0 websocket-client-0.53.0
+Raishas-MacBook-Pro:~ raisha$ export VALET_SLACK_TOKEN='YOUR AUTH TOKEN GOES HERE'
+Raishas-MacBook-Pro:~ raisha$ export VALET_SLACK_NAME='valet'
+Raishas-MacBook-Pro:~ raisha$ export CINEMABOT_SLACK_TOKEN='xoxb-453792396083-453149727408-c6PJSuhjYbBosCbObU7M5BXl'
+Raishas-MacBook-Pro:~ raisha$ export CINEMABOT_SLACK_NAME='cinemabot'
+Raishas-MacBook-Pro:~ raisha$ sh source.sh
+sh: source.sh: No such file or directory
+Raishas-MacBook-Pro:~ raisha$ sh source.sh
+sh: source.sh: No such file or directory
+Raishas-MacBook-Pro:~ raisha$ cd desktop
+Raishas-MacBook-Pro:desktop raisha$ invoke generate.installer
+-bash: invoke: command not found
+Raishas-MacBook-Pro:desktop raisha$ export CINEMABOT_SLACK_TOKEN='xoxb-453792396083-453149727408-c6PJSuhjYbBosCbObU7M5BXl'
+Raishas-MacBook-Pro:desktop raisha$ cd dektop
+-bash: cd: dektop: No such file or directory
+Raishas-MacBook-Pro:desktop raisha$ mkdir cinemabot
+Raishas-MacBook-Pro:desktop raisha$ pip install slackclient
+Requirement already satisfied: slackclient in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: six<2.0a0,>=1.10 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: idna<2.8,>=2.5 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: certifi>=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+Raishas-MacBook-Pro:desktop raisha$ cd cinemabot
+Raishas-MacBook-Pro:cinemabot raisha$ import os.path
+-bash: import: command not found
+Raishas-MacBook-Pro:cinemabot raisha$ pthon get-pip.py
+-bash: pthon: command not found
+Raishas-MacBook-Pro:cinemabot raisha$ python get-pip.py
+python: can't open file 'get-pip.py': [Errno 2] No such file or directory
+Raishas-MacBook-Pro:cinemabot raisha$ pip install -U pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/c2/d7/90f34cb0d83a6c5631cf71dfe64cc1054598c843a92b400e55675cc2ac37/pip-18.1-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 3.5MB/s 
+Installing collected packages: pip
+  Found existing installation: pip 18.0
+    Uninstalling pip-18.0:
+      Successfully uninstalled pip-18.0
+Successfully installed pip-18.1
+Raishas-MacBook-Pro:cinemabot raisha$ pip install virtualenv
+Requirement already satisfied: virtualenv in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (16.0.0)
+Raishas-MacBook-Pro:cinemabot raisha$ virtualenv --version
+16.0.0
+Raishas-MacBook-Pro:cinemabot raisha$ python3 -m venv myvenv 
+Raishas-MacBook-Pro:cinemabot raisha$ source myvenv/bin/activate
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ pip install slackclient
+Collecting slackclient
+  Downloading https://files.pythonhosted.org/packages/0d/2f/1378e64a843a5a8a83d73caa59ac88c36c67e2b41ac0fab3422080ff13bd/slackclient-1.3.0-py2.py3-none-any.whl
+Collecting requests<3.0a0,>=2.11 (from slackclient)
+  Downloading https://files.pythonhosted.org/packages/65/47/7e02164a2a3db50ed6d8a6ab1d6d60b69c4c3fdf57a284257925dfc12bda/requests-2.19.1-py2.py3-none-any.whl (91kB)
+    100% |████████████████████████████████| 94kB 2.0MB/s 
+Collecting six<2.0a0,>=1.10 (from slackclient)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting websocket-client<1.0a0,>=0.35 (from slackclient)
+  Downloading https://files.pythonhosted.org/packages/14/d4/6a8cd4e7f67da465108c7cc0a307a1c5da7e2cdf497330b682069b1d4758/websocket_client-0.53.0-py2.py3-none-any.whl (198kB)
+    100% |████████████████████████████████| 200kB 2.0MB/s 
+Collecting idna<2.8,>=2.5 (from requests<3.0a0,>=2.11->slackclient)
+  Downloading https://files.pythonhosted.org/packages/4b/2a/0276479a4b3caeb8a8c1af2f8e4355746a97fab05a372e4a2c6a6b876165/idna-2.7-py2.py3-none-any.whl (58kB)
+    100% |████████████████████████████████| 61kB 4.5MB/s 
+Collecting urllib3<1.24,>=1.21.1 (from requests<3.0a0,>=2.11->slackclient)
+  Downloading https://files.pythonhosted.org/packages/bd/c9/6fdd990019071a4a32a5e7cb78a1d92c53851ef4f56f62a3486e6a7d8ffb/urllib3-1.23-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 135kB 2.5MB/s 
+Collecting chardet<3.1.0,>=3.0.2 (from requests<3.0a0,>=2.11->slackclient)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 135kB 2.5MB/s 
+Collecting certifi>=2017.4.17 (from requests<3.0a0,>=2.11->slackclient)
+  Downloading https://files.pythonhosted.org/packages/df/f7/04fee6ac349e915b82171f8e23cee63644d83663b34c539f7a09aed18f9e/certifi-2018.8.24-py2.py3-none-any.whl (147kB)
+    100% |████████████████████████████████| 147kB 2.1MB/s 
+Installing collected packages: idna, urllib3, chardet, certifi, requests, six, websocket-client, slackclient
+Successfully installed certifi-2018.8.24 chardet-3.0.4 idna-2.7 requests-2.19.1 six-1.11.0 slackclient-1.3.0 urllib3-1.23 websocket-client-0.53.0
+You are using pip version 7.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/c2/d7/90f34cb0d83a6c5631cf71dfe64cc1054598c843a92b400e55675cc2ac37/pip-18.1-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 398kB/s 
+Installing collected packages: pip
+  Found existing installation: pip 7.1.2
+    Uninstalling pip-7.1.2:
+      Successfully uninstalled pip-7.1.2
+Successfully installed pip-18.1
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ export cinemabot_slack_token='xoxb-453792396083-453149727408-c6PJSuhjYbBosCbObU7M5BXl'
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ export cinemabot_slack_name='cinemabot'
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ sh source.sh
+sh: source.sh: No such file or directory
+(myvenv) Raishas-MacBook-Pro:cinemabot raisha$ cd myvenv
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export cinemabot_slack_token='xoxb-453792396083-453149727408-c6PJSuhjYbBosCbObU7M5BXl'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export cinemabot_slack_name='cinemabot'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ $> export VALET_SLACK_TOKEN='YOUR AUTH TOKEN GOES HERE'
+-bash: $: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ $> export VALET_SLACK_NAME='valet'
+-bash: $: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export SLACK_BOT_TOKEN='xoxb-453792396083-453149727408-c6PJSuhjYbBosCbObU7M5BXl'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install slackclient
+Requirement already satisfied: slackclient in ./lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in ./lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in ./lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: six<2.0a0,>=1.10 in ./lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python im_open.py
+  File "im_open.py", line 2
+    token = “xoxo-love”
+                ^
+SyntaxError: invalid character in identifier
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python im_open.py
+  File "im_open.py", line 2
+    token = “xoxo-love”
+                ^
+SyntaxError: invalid character in identifier
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python im_open.py
+  File "im_open.py", line 3
+    token = “xoxo-love”
+                ^
+SyntaxError: invalid character in identifier
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python im_open.py
+  File "im_open.py", line 3
+    token = “xoxo-love”
+                ^
+SyntaxError: invalid character in identifier
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python im_open.py
+  File "im_open.py", line 3
+    token = “xoxb-453792396083-453149727408-LhWfF0fkEvjTX89iQgv9s1oV”
+                ^
+SyntaxError: invalid character in identifier
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export CINEMABOT_SLACK_TOKEN='xoxb-453792396083-453149727408-LhWfF0fkEvjTX89iQgv9s1oV'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export CINEMABOT_SLACK_NAME='cinemabot'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export CINEMABOT_SLACK_TOKEN='xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export CINEMABOT_SLACK_NAME='cinemabot'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+source.sh: line 1: xport: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+Traceback (most recent call last):
+  File "discover.py", line 10, in <module>
+    is_ok = cinema_slack_client.api_call("users.list").get('ok')
+NameError: name 'cinema_slack_client' is not defined
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ import slackclient
+-bash: import: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ import os slackclient
+-bash: import: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install slackclient
+Requirement already satisfied: slackclient in ./lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: six<2.0a0,>=1.10 in ./lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in ./lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in ./lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install --upgrade request
+Collecting request
+  Downloading https://files.pythonhosted.org/packages/b8/13/b88a65f14470f3e17d72a1a930f173b36717c211685dbbadfc2e5ba21303/request-1.0.2.tar.gz
+  Running setup.py (path:/private/var/folders/d9/c1kstkjx4mz2yly7x11m6mnh0000gn/T/pip-install-xlstxzed/request/setup.py) egg_info for package request produced metadata for project name unknown. Fix your #egg=request fragments.
+Installing collected packages: unknown
+  Running setup.py install for unknown ... done
+Successfully installed unknown-0.0.0
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ run slackclient
+-bash: run: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install slackclient
+Requirement already satisfied: slackclient in ./lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: six<2.0a0,>=1.10 in ./lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in ./lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in ./lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ from slackclient import slackclient
+from: can't read /var/mail/slackclient
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ from slackclient import SlackClient
+from: can't read /var/mail/slackclient
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python3 -m pip install slackclient
+Requirement already satisfied: slackclient in ./lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in ./lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in ./lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: six<2.0a0,>=1.10 in ./lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python -m pip install slackclient
+Requirement already satisfied: slackclient in ./lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in ./lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in ./lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: six<2.0a0,>=1.10 in ./lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ run main.py
+-bash: run: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ activate main.py
+-bash: /Users/raisha/Desktop/cinemabot/myvenv/bin/activate: Permission denied
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sudo pip install slackclient
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+Traceback (most recent call last):
+  File "discover.py", line 15, in <module>
+    for user in CINEMABOT_slack_client.api_call("users.list").get('members'):
+NameError: name 'CINEMABOT_slack_client' is not defined
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install slackclient
+Requirement already satisfied: slackclient in ./lib/python3.5/site-packages (1.3.0)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in ./lib/python3.5/site-packages (from slackclient) (0.53.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in ./lib/python3.5/site-packages (from slackclient) (2.19.1)
+Requirement already satisfied: six<2.0a0,>=1.10 in ./lib/python3.5/site-packages (from slackclient) (1.11.0)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2.7)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (1.23)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests<3.0a0,>=2.11->slackclient) (2018.8.24)
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+Traceback (most recent call last):
+  File "discover.py", line 15, in <module>
+    for user in CINEMABOT_slack_client.api_call("users.list").get('members'):
+NameError: name 'CINEMABOT_slack_client' is not defined
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+Traceback (most recent call last):
+  File "discover.py", line 15, in <module>
+    for user in CINEMABOT_slack_client.api_call("users.list").get('members'):
+NameError: name 'CINEMABOT_slack_client' is not defined
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install sh
+Collecting sh
+  Downloading https://files.pythonhosted.org/packages/4a/22/17b22ef5b049f12080f5815c41bf94de3c229217609e469001a8f80c1b3d/sh-1.12.14-py2.py3-none-any.whl
+Installing collected packages: sh
+Successfully installed sh-1.12.14
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ import source.sh
+-bash: import: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ git clone https://github.com/slackapi/python-slackclient.git
+Cloning into 'python-slackclient'...
+remote: Enumerating objects: 153, done.
+remote: Counting objects: 100% (153/153), done.
+remote: Compressing objects: 100% (114/114), done.
+remote: Total 1985 (delta 92), reused 77 (delta 38), pack-reused 1832
+Receiving objects: 100% (1985/1985), 1.15 MiB | 1.32 MiB/s, done.
+Resolving deltas: 100% (1285/1285), done.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install -r requirements.txt
+Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ $ git clone git://github.com/pennersr/django-allauth.git
+-bash: $: command not found
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+UDB4DMDC0
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ pip install django-allauth
+
+Collecting django-allauth
+  Downloading https://files.pythonhosted.org/packages/69/b3/7edc977e66ef76fe740f16552f65c1a043a944227fb6063327b31cde2573/django-allauth-0.38.0.tar.gz (511kB)
+    100% |████████████████████████████████| 512kB 5.2MB/s 
+Collecting Django>=1.11 (from django-allauth)
+  Downloading https://files.pythonhosted.org/packages/32/ab/22530cc1b2114e6067eece94a333d6c749fa1c56a009f0721e51c181ea53/Django-2.1.2-py3-none-any.whl (7.3MB)
+    100% |████████████████████████████████| 7.3MB 4.1MB/s 
+Collecting python3-openid>=3.0.8 (from django-allauth)
+  Downloading https://files.pythonhosted.org/packages/bd/de/52c5699f52dcee3037db587196dcaf63ffedf5fbeba3183afe9b21a3a89f/python3_openid-3.1.0-py3-none-any.whl (130kB)
+    100% |████████████████████████████████| 133kB 8.3MB/s 
+Collecting requests-oauthlib>=0.3.0 (from django-allauth)
+  Using cached https://files.pythonhosted.org/packages/94/e7/c250d122992e1561690d9c0f7856dadb79d61fd4bdd0e598087dce607f6c/requests_oauthlib-1.0.0-py2.py3-none-any.whl
+Requirement already satisfied: requests in ./lib/python3.5/site-packages (from django-allauth) (2.19.1)
+Collecting pytz (from Django>=1.11->django-allauth)
+  Using cached https://files.pythonhosted.org/packages/30/4e/27c34b62430286c6d59177a0842ed90dc789ce5d1ed740887653b898779a/pytz-2018.5-py2.py3-none-any.whl
+Collecting defusedxml (from python3-openid>=3.0.8->django-allauth)
+  Downloading https://files.pythonhosted.org/packages/87/1c/17f3e3935a913dfe2a5ca85fa5ccbef366bfd82eb318b1f75dadbf0affca/defusedxml-0.5.0-py2.py3-none-any.whl
+Collecting oauthlib>=0.6.2 (from requests-oauthlib>=0.3.0->django-allauth)
+  Using cached https://files.pythonhosted.org/packages/e6/d1/ddd9cfea3e736399b97ded5c2dd62d1322adef4a72d816f1ed1049d6a179/oauthlib-2.1.0-py2.py3-none-any.whl
+Requirement already satisfied: certifi>=2017.4.17 in ./lib/python3.5/site-packages (from requests->django-allauth) (2018.8.24)
+Requirement already satisfied: idna<2.8,>=2.5 in ./lib/python3.5/site-packages (from requests->django-allauth) (2.7)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in ./lib/python3.5/site-packages (from requests->django-allauth) (1.23)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./lib/python3.5/site-packages (from requests->django-allauth) (3.0.4)
+Installing collected packages: pytz, Django, defusedxml, python3-openid, oauthlib, requests-oauthlib, django-allauth
+  Running setup.py install for django-allauth ... done
+Successfully installed Django-2.1.2 defusedxml-0.5.0 django-allauth-0.38.0 oauthlib-2.1.0 python3-openid-3.1.0 pytz-2018.5 requests-oauthlib-1.0.0
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ 
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python source.sh
+  File "source.sh", line 1
+    export CINEMABOT_SLACK_TOKEN='xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b'
+                               ^
+SyntaxError: invalid syntax
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ source source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ export slack_bot_token='xoxb-453792396083-455441528115-rmzzaRaYx749XTpCw12QKe3a'
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python source.sh
+  File "source.sh", line 1
+    export CINEMABOT_SLACK_TOKEN='xoxb-453792396083-455441528115-rmzzaRaYx749XTpCw12QKe3a'
+                               ^
+SyntaxError: invalid syntax
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python python discover.py
+/Library/Frameworks/Python.framework/Versions/3.5/Resources/Python.app/Contents/MacOS/Python: can't open file 'python': [Errno 2] No such file or directory
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+UDB4DMDC0
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+UDB4DMDC0
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+UDB4DMDC0
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+  File "cinemabot.py", line 16
+    if type and type == 'message' and not(event.get('user')==VALET_SLACK_ID):
+                                                                            ^
+IndentationError: unindent does not match any outer indentation level
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+  File "cinemabot.py", line 16
+    if type and type == 'message' and not(event.get('user')==CINEMABOT_SLACK_ID):
+                                                                                ^
+IndentationError: unindent does not match any outer indentation level
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python cinemabot.py
+Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 376, in wrap_socket
+    _context=self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 747, in __init__
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 983, in do_handshake
+    self._sslobj.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 628, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)
+[!] Connection to Slack failed.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ sh source.sh
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ source myvenv/bin/activate
+-bash: myvenv/bin/activate: No such file or directory
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ cd desktop
+-bash: cd: desktop: No such file or directory
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ 
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python3 discover.py
+cinemabot
+xoxp-453792396083-453278675089-453302478448-52b9ee119d4b8b8cd0a8c0cce497c31b
+True
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ python3 cinemabot.py
+Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 376, in wrap_socket
+    _context=self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 747, in __init__
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 983, in do_handshake
+    self._sslobj.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ssl.py", line 628, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/raisha/Desktop/cinemabot/myvenv/lib/python3.5/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:646)
+[!] Connection to Slack failed.
+(myvenv) Raishas-MacBook-Pro:myvenv raisha$ 
